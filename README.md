@@ -1,8 +1,8 @@
 # Jenkins con Docker Plugin
-Univesidad Icesi
-Santiago De Los Ríos
-Nelson David Padilla H.
-Juan Camilo Amezquita
+<b><i>Univesidad Icesi</i><b>
+<p>Santiago De Los Ríos</p>
+<p>Nelson David Padilla H.</p>
+<p>Juan Camilo Amezquita</p>
 
 <h1>Procedimiendo:</h1>
 ## 1. Clonar repositorio
