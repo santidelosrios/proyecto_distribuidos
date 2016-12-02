@@ -1,10 +1,12 @@
 # Jenkins con Docker Plugin
-<b><i>Univesidad Icesi</i><b>
-<p>Santiago De Los Ríos</p>
-<p>Nelson David Padilla H.</p>
-<p>Juan Camilo Amezquita</p>
+<b><i>Univesidad Icesi</i></b>
+Santiago De Los Ríos<br>
+Nelson David Padilla H.</br>
+Juan Camilo Amezquita</br>
+<h2>Proyecto Final</h2>
+<p>En el siguiente proyecto se realiza el aprovicionamiento de un ambiente que permita realizar integración continua, utilizando la herramienta jenkins, junto con la tecnologia de virtualización docker. A contiuación, se presenta la arquitectura utilizada.</p>
 
-<h1>Procedimiendo:</h1>
+<h2>Procedimiendo:</h2>
 ## 1. Clonar repositorio
 ```
 $ git clone https://github.com/phndavid13/docker_app
@@ -12,4 +14,4 @@ $ git clone https://github.com/phndavid13/docker_app
 ## 2. Crear imagenes
 Ingrese al directorio master, para crear la imagen del servidor master con jenkis y ejecute la siguiente instrucción:
 ```
-$ docker build -t jenkis_master .
+$ docker build -t jenkins_master .
