@@ -5,7 +5,7 @@ Nelson David Padilla H.</br>
 Juan Camilo Amezquita</br>
 <h2>Proyecto Final</h2>
 <p>En el siguiente proyecto se realiza el aprovicionamiento de un ambiente que permita realizar integración continua, utilizando la herramienta jenkins, junto con la tecnologia de virtualización docker. A contiuación, se presenta la arquitectura utilizada.</p>
-
+![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/arquitectura.jpg)
 <h2>Procedimiendo:</h2>
 ## 1. Clonar repositorio
 ```
