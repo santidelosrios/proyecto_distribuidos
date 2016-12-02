@@ -15,3 +15,9 @@ $ git clone https://github.com/phndavid13/docker_app
 Ingrese al directorio master, para crear la imagen del servidor master con jenkis y ejecute la siguiente instrucción:
 ```
 $ docker build -t jenkins_master .
+```
+## 3. Ejecutar docker-compose
+Ingrese al directorio proyecto_distribuidos para levantar la maquina jenkins_master y ejecute la siguiente instrucción:
+```
+$ docker-compose up
+```
