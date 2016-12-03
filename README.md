@@ -23,7 +23,18 @@ Esto inicia el proceso de construir la imagen del maestro de Jenkins que permiti
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/cli-master.png)
 
-## 3. Ejecutar Contenedor Maestro
+## 3. Crear imagen slave
+
+Ingrese al directorio slave y construya la imagen del contenedor que tiene el nodo esclavo de Jenkins.
+```
+$ cd slave
+$ docker build -t jenkins_slave .
+```
+Esto inicia el proceso de construir la imagen del esclavo de Jenkins que permitirá aprovisionar un contenedor con dicha herramienta. La siguiente imagen muestra el proceso de construcción de la imagen.
+
+![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/cli-slave.png)
+
+## 4. Ejecutar Contenedor Maestro
 Ingrese al directorio proyecto_distribuidos para levantar el contenedor con la imagen jenkins_master:
 ```
 $ docker run -p 8080:8080 -d jenkins_master
@@ -36,7 +47,7 @@ Para comprobar que la instalación de los plugings fue exitosa puede ir al gesto
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_2.jpg)
 
-## 4. Configuración del servidor de Docker en Jenkins
+## 5. Configuración del servidor de Docker en Jenkins
 Para permitir que Jenkins cree los nodos esclavos para ejecutar pruebas, se debe utilizar el Docker plugin y configurar el servidor que tendrá las imagenes de los contenedores.
 
 Para esto, en la pantalla inicial de Jenkins, vaya a la opción Manage Jenkins > System Configuration > Add Cloud > Docker y registre la información como lo muestra la siguiente imagen.
@@ -61,24 +72,13 @@ En la página principal de Jenkins, en la parte central, haga click en new item.
 Inicialmente, se configura que el trabajo se corra dentro de un contenedor esclavo usando Docker. Posteriormente, se especifica que solo se puede correr usando un nodo específico. Además, se configura la fuente del código, la cual es un repositorio en GitHub. Por último, se configura que se ejecute un comando de shell en el momento de la construcción del trabajo. Este comando ejecuta la aplicación que se tiene en el repositorio de GitHub.
 
 # Test
-
-## 1. Crear imagen slave
-
-Ingrese al directorio slave y construya la imagen del contenedor que tiene el nodo esclavo de Jenkins.
-```
-$ cd slave
-$ docker build -t jenkins_slave .
-```
-Esto inicia el proceso de construir la imagen del esclavo de Jenkins que permitirá aprovisionar un contenedor con dicha herramienta. La siguiente imagen muestra el proceso de construcción de la imagen.
-![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/cli-slave.png)
-
-## 2. Funcionamiento de las pruebas del Job
+## 1. Funcionamiento de las pruebas del Job
 Después de terminar la configuración, haga click en <i>save</i> y se le redireccionará a la página principal del job. Haga click en <i>Build Now</i>. Esto comenzará el proceso de construcción de la prueba. Posteriormente, haga click en el número de build que hizo y verificar que hubo éxito en la prueba.
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/console-output-1.png)
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/console-output-1.png)
 
-#Referencias
+# Referencias
 <ul>
 <li>http://devopscube.com/docker-containers-as-build-slaves-jenkins/</li>
 <li>https://engineering.riotgames.com/news/jenkins-ephemeral-docker-tutorial</li>
