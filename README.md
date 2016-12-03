@@ -23,3 +23,12 @@ $ docker-compose up
 ```
 Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la Ip: 127.0.0.1 con el puerto: 8080. A continuación, se muestra lo que usted tiene que visualizar.
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_1.jpg)
+
+Para comprobar que la instalación de los plugings fue exitosa puede ir a : 
+![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_2.jpg)
+
+## 4. Configuración Job
+![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_3.jpg)
+
+
+
