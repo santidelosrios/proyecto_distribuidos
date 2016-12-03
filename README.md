@@ -36,6 +36,13 @@ Para permitir que Jenkins cree los nodos esclavos para ejecutar pruebas, se debe
 
 Para esto, en la pantalla inicial de Jenkins, vaya a la opción Manage Jenkins > System Configuration > Add Cloud > Docker y registre la información como lo muestra la siguiente imagen.
 
+aqui va docker-cloud
 
-## 5. Configuración Job
+## 6. Configuración de las imagenes para los esclavos
+
+Más abajo de la configuración de servidor de Docker, haga click en la opción add template e ingrese la información que se muestra en la imagen.
+
+aqui va docker-image-1
+
+## 5. Configuración de un Job
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_3.jpg)
