@@ -13,7 +13,7 @@ En el siguiente proyecto se realiza el aprovicionamiento de un ambiente que perm
 ```
 $ git clone https://github.com/santidelosrios/proyecto_distribuidos
 ```
-## 2. Crear imagenes
+## 2. Crear imagen master
 Ingrese al directorio master y construya la imagen del contenedor que tiene el nodo maestro de Jenkins.
 ```
 $ cd master
@@ -60,9 +60,20 @@ En la página principal de Jenkins, en la parte central, haga click en new item.
 
 Inicialmente, se configura que el trabajo se corra dentro de un contenedor esclavo usando Docker. Posteriormente, se especifica que solo se puede correr usando un nodo específico. Además, se configura la fuente del código, la cual es un repositorio en GitHub. Por último, se configura que se ejecute un comando de shell en el momento de la construcción del trabajo. Este comando ejecuta la aplicación que se tiene en el repositorio de GitHub.
 
-## 8. Funcionamiento de las pruebas del Job
+# Test
 
-Después de terminar la configuración, haga click en save y se le redireccionará a la página principal del job. Haga click en Build Now. Esto comenzará el proceso de construcción de la prueba. Posteriormente, haga click en el número de build que hizo y verificar que hubo éxito en la prueba.
+## 1. Crear imagen slave
+
+Ingrese al directorio slave y construya la imagen del contenedor que tiene el nodo esclavo de Jenkins.
+```
+$ cd slave
+$ docker build -t jenkins_slave .
+```
+Esto inicia el proceso de construir la imagen del esclavo de Jenkins que permitirá aprovisionar un contenedor con dicha herramienta. La siguiente imagen muestra el proceso de construcción de la imagen.
+![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/cli-slave.png)
+
+## 2. Funcionamiento de las pruebas del Job
+Después de terminar la configuración, haga click en <i>save</i> y se le redireccionará a la página principal del job. Haga click en <i>Build Now</i>. Esto comenzará el proceso de construcción de la prueba. Posteriormente, haga click en el número de build que hizo y verificar que hubo éxito en la prueba.
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/console-output-1.png)
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/console-output-1.png)

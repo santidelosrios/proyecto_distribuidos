@@ -1,5 +1,5 @@
 FROM evarga/jenkins-slave
-UPDATE AND INSTALL REQUIRED PACKAGES
+#UPDATE AND INSTALL REQUIRED PACKAGES
 RUN apt-get update
 RUN apt-get install -y wget
 RUN apt-get install -y python python-dev python-distribute
