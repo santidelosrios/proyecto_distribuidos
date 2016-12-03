@@ -28,11 +28,11 @@ Ingrese al directorio proyecto_distribuidos para levantar el contenedor con la i
 ```
 $ docker run -p 8080:8080 -d jenkins_master
 ```
-Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la Ip: 172.17.0.1 con el puerto: 8080. A continuación, se muestra lo que usted tiene que visualizar.
+Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la Ip: 172.17.0.1 ó 127.0.0.1 con el puerto: 8080. A continuación, se muestra lo que usted tiene que visualizar.
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_1.jpg)
 
-Para comprobar que la instalación de los plugings fue exitosa puede ir a:
+Para comprobar que la instalación de los plugings fue exitosa puede ir al gestor de plugins, tal como se muestra en la imagen a continuación:
 
 ![alt tag] (https://github.com/santidelosrios/proyecto_distribuidos/blob/master/img/jenkins_2.jpg)
 
